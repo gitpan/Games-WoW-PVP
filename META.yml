@@ -1,15 +1,17 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Games-WoW-PVP
-version:      0.01
-version_from: lib/Games/WoW/PVP.pm
-installdirs:  site
-requires:
+--- #YAML:1.0
+name:                Games-WoW-PVP
+version:             0.04
+abstract:            (DEPRECATED) fetch informations about pvp grades for world of warcraft
+license:             perl
+generated_by:        ExtUtils::MakeMaker version 6.32
+distribution_type:   module
+requires:     
     Class::Base:                   0
-    Data::Dumper:                  0
-    LWP::UserAgent:                0
+    Games::WoW::Armory:            0
     Test::More:                    0
-    XML::Simple:                   0
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.17
+    Test::Perl::Critic:            0
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
+    version: 1.2
+author:
+    - Franck Cuny <franck.cuny@gmail.com>
